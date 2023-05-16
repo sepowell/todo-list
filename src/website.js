@@ -1,10 +1,22 @@
+const elementFactory = (type, text) => {
+  const createElement = () => {
+    let main = document.createElement(type);
+    main.innerText = text;
+    return main;
+  }
+  
+  return { createElement };
+}
+
+
 function initalizeWebsite() {
+
+
   const siteWrapper = document.getElementById('site-wrapper');
 
-  const testElement = document.createElement('p');
-  testElement.innerText = "testing!!!";
+  const test = elementFactory('div', 'testing hellooooo');
 
-  siteWrapper.appendChild(testElement);
+  siteWrapper.appendChild(test.createElement());
 
 }
 
