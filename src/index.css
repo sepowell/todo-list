@@ -1,0 +1,107 @@
+/* General */
+@font-face {
+  font-family: "freakshow";
+  src: url(./fonts/freakshow.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  background-color: rgb(2, 88, 2);
+  box-shadow: 0 6px 6px rgba(21, 21, 21, 0.929);
+  color: rgb(0, 0, 0);
+  font-family: "freakshow", Arial, Helvetica, sans-serif;
+  z-index: 3;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  gap: 30px;
+  width: 100vw;
+}
+
+.header-container > h1 > span {
+  text-decoration: underline;
+}
+
+.header-container > h1 {
+  font-size: 50px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+.account > img {
+  width: 50px;
+  border-radius: 25px;
+  border: 1.5px solid black;
+}
+
+.logo {
+  width: 60px;
+}
+
+
+main {
+  margin-top: 80px;
+  display: flex;
+  background-color: #c2bfbf;
+}
+
+/* Nav Bar */
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-right: 2px solid black;
+
+  width: 215px;
+  height: 100vh;
+  padding-top: 30px;
+  gap: 40px;
+  background-color: #272626;
+  color: white;
+}
+
+.nav-bar > button {
+  border: none;
+  height: 40px;
+  width: 115px;
+  border-radius: 20px;
+}
+
+.nav-divide {
+  width: 70px;
+}
+
+/* Page */
+.page {
+  padding: 30px;
+}
