@@ -1,7 +1,7 @@
 /* General */
 @font-face {
-  font-family: "freakshow";
-  src: url(./fonts/freakshow.ttf);
+  font-family: "chintzy";
+  src: url(fonts/chintzy.ttf);
 }
 
 @font-face {
@@ -43,11 +43,10 @@ header {
   width: 100vw;
   height: 80px;
   display: flex;
-  background-color: rgb(2, 88, 2);
+  background: linear-gradient(to bottom, forestgreen, rgb(18, 74, 18));
   box-shadow: 0 6px 6px rgba(21, 21, 21, 0.929);
   border-bottom: 1px solid black;
   color: rgb(0, 0, 0);
-  font-family: "freakshow", Arial, Helvetica, sans-serif;
   z-index: 3;
 }
 
@@ -85,8 +84,34 @@ header {
   border: 1.5px solid black;
 }
 
+.logo-container {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: "chintzy";
+  font-size: 22px;
+}
+
 .logo {
   width: 60px;
+}
+
+.logo-container > p, .logo-container > h1 {
+  align-items: baseline;
+  margin-bottom: -5px;
+}
+
+.logo-container > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  text-decoration: none;
+  color: #c1bfbf;
+  margin-bottom: -10px;
+  margin-left: -15px;
 }
 
 
@@ -127,4 +152,14 @@ main {
 /* Page */
 .page {
   padding: 30px;
+}
+
+.page > div {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: -3px 5px 5px #797676;
+  background-color: white;
+  padding: 10px;
 }
