@@ -4,6 +4,16 @@
   src: url(./fonts/freakshow.ttf);
 }
 
+@font-face {
+  font-family: "uni-i";
+  src: url(fonts/unisans-ital.otf);
+}
+
+@font-face {
+  font-family: "uni-b";
+  src: url(fonts/Uni\ Sans\ Heavy\ Italic.otf);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -12,6 +22,17 @@
 
 img {
   height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 1.07;
+  background-color: #34c3f0;
+  border: 5px solid black;
+  color: black;
 }
 
 /* Header */
@@ -24,6 +45,7 @@ header {
   display: flex;
   background-color: rgb(2, 88, 2);
   box-shadow: 0 6px 6px rgba(21, 21, 21, 0.929);
+  border-bottom: 1px solid black;
   color: rgb(0, 0, 0);
   font-family: "freakshow", Arial, Helvetica, sans-serif;
   z-index: 3;
@@ -88,6 +110,7 @@ main {
   gap: 40px;
   background-color: #272626;
   color: white;
+  font-family: "uni-i";
 }
 
 .nav-bar > button {
