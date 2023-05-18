@@ -1,4 +1,4 @@
-/* General */
+/* Fonts */
 @font-face {
   font-family: "chintzy";
   src: url(fonts/chintzy.ttf);
@@ -14,6 +14,7 @@
   src: url(fonts/Uni\ Sans\ Heavy\ Italic.otf);
 }
 
+/* General */
 * {
   margin: 0px;
   padding: 0px;
@@ -35,6 +36,12 @@ button:hover {
   color: black;
 }
 
+main {
+  margin-top: 80px;
+  display: flex;
+  background-color: #c2bfbf;
+}
+
 /* Header */
 header {
   position: fixed;
@@ -47,11 +54,6 @@ header {
   box-shadow: 0 6px 6px rgba(21, 21, 21, 0.929);
   border-bottom: 1px solid black;
   color: rgb(0, 0, 0);
-  z-index: 3;
-}
-
-.header-container {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 80px;
@@ -60,22 +62,14 @@ header {
   width: 100vw;
 }
 
-.header-container > h1 > span {
-  text-decoration: underline;
-}
-
-.header-container > h1 {
-  font-size: 50px;
-}
-
 .account {
   display: flex;
   align-items: center;
   gap: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   text-decoration: underline;
   color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .account > img {
@@ -114,13 +108,6 @@ header {
   margin-left: -15px;
 }
 
-
-main {
-  margin-top: 80px;
-  display: flex;
-  background-color: #c2bfbf;
-}
-
 /* Nav Bar */
 .nav-bar {
   display: flex;
@@ -152,14 +139,31 @@ main {
 /* Page */
 .page {
   padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.page > div {
-  width: 300px;
-  height: 300px;
+/* Inbox */
+.inbox-container {
+  width: 82vw;
+  height: 85vh;
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: -3px 5px 5px #797676;
   background-color: white;
-  padding: 10px;
+  padding: 30px 40px;
+  padding-bottom: 60px;
+}
+
+.task-title {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.task-container {
+  display: grid;
+  grid-template-columns: .5fr 2fr 1fr 1fr 1fr .5fr;
+  flex-wrap: nowrap;
+  height: 70px;
+  align-items: center;
+  font-size: 18px;
 }
